@@ -1,0 +1,30 @@
+.cursor_trail_holder{
+    position: fixed;
+    top: -200px;
+    left: -200px;
+    z-index: 900;
+}
+.cursor_circles{
+    height: 24px;
+    width: 24px;
+    background: var(--yellow-gradient);
+    border-radius: 50%;
+    /* opacity: 0.9; */
+    top: 0;
+    left: 0;
+    position: fixed; 
+    pointer-events: none;
+}
+
+.cursor_with_border{
+    border: 2px solid black;
+}
+
+@media(max-width:1024px){
+    .cursor_trail_holder{
+        display: none;
+    }
+    *{
+        cursor: default;
+    }
+}

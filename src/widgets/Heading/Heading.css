@@ -1,0 +1,29 @@
+.heading_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.heading_content{
+    color: transparent;
+    background: var(--yellow-gradient);
+    -webkit-background-clip: text;
+    font-size: 64px;
+    font-family: 'Franie_Bold';
+    letter-spacing: 0.3rem;
+    width: 80%;
+    text-align: center;
+    background-size: 0% 100%;
+    /* background-position: 0% 0%; */
+    background-repeat: no-repeat;
+    animation: scroll_reveal_heading linear;
+    animation-timeline: view();
+    animation-range-start: 50px;
+    /* animation-range-end: 200px; */
+}
+
+@media(max-width:500px){
+    .heading_content{
+        font-size: 36px;
+    }
+}

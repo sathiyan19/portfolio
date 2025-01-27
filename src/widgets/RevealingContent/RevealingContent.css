@@ -1,0 +1,39 @@
+.reveal_content_container{
+    margin-top: 20px;
+    /* display: inline; */
+    padding-block: clamp(8rem,25vh);
+    text-align: justify;
+    padding: 0 0px;
+    /* margin: 50px; */
+}
+
+.reveal_content{
+    /* color: var(--background-color); */
+    color: hsl(0 22% 95% / 0.2);
+    background: var(--white-gradient);
+    /* background-image: linear-gradient(#F6F1F1 50%, #000000 74%); */
+    -webkit-background-clip: text;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    animation: scroll_reveal_content linear;
+    animation-timeline: view();
+    animation-range-start: 300px;
+
+    display: inline;
+    zoom: 1;
+    vertical-align: middle;
+    
+
+    font-family: "Francy";
+    letter-spacing: 3px;
+    line-height: 2rem;
+    text-align: justify; 
+    /* padding: 50px; */
+    font-size: 24px;
+}
+
+@media(max-width:500px){
+    .reveal_content_container{
+        padding: 15px;
+    }
+}

@@ -1,0 +1,92 @@
+.about_holder{
+    /* margin-top: 50px; */
+    padding-top: 100px;
+    /* height: 100vh; */
+}
+
+.about_title_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about_title{
+    color: transparent;
+    background: var(--yellow-gradient);
+    -webkit-background-clip: text;
+    font-size: 64px;
+    font-family: 'Franie_Bold';
+    letter-spacing: 0.3rem;
+    width: 80%;
+    text-align: center;
+    background-size: 0% 100%;
+    /* background-position: 0% 0%; */
+    background-repeat: no-repeat;
+    animation: scroll_reveal_heading linear;
+    animation-timeline: view();
+    animation-range-start: 50px;
+    /* animation-range-end: 200px; */
+}
+
+.about_content_container{
+    /* display: inline; */
+    padding-block: clamp(8rem,25vh);
+    text-align: justify;
+    padding: 0 50px;
+    /* margin: 50px; */
+}
+
+.about_content{
+    /* color: var(--background-color); */
+    color: hsl(0 22% 95% / 0.2);
+    background: var(--white-gradient);
+    /* background-image: linear-gradient(#F6F1F1 50%, #000000 74%); */
+    -webkit-background-clip: text;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    animation: scroll_reveal_content linear;
+    animation-timeline: view();
+    animation-range-start: 300px;
+
+    display: inline;
+    zoom: 1;
+    vertical-align: middle;
+    
+
+    font-family: "Francy";
+    letter-spacing: 3px;
+    line-height: 2rem;
+    text-align: justify; 
+    /* padding: 50px; */
+    font-size: 24px;
+}
+
+.projects_sec{
+    padding-top: 100px;
+}
+
+@keyframes scroll_reveal_heading {
+    to{
+        background-size: 220% 100%;
+        /* background-position: 100% 100%; */
+    }
+}
+
+@keyframes scroll_reveal_content {
+    to{
+        background-size: 350% 100%;
+        /* background-position: 100% 100%; */
+    }
+}
+
+@media(max-width:500px){
+    .about_title{
+        font-size: 36px;
+    }
+    .about_content{
+        font-size: 18px;
+    }
+    .about_content_container{
+        padding: 15px;
+    }
+}

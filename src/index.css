@@ -1,13 +1,168 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+*{
+  margin: 0;
+  padding: 0;
+  cursor: none;
+  scroll-behavior: smooth;
+}
+
+body{
+  background: var(--black-gradient);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+:root {
+  /* --primary-color: #19A7CE; */
+  --primary-color1: #FFB547;
+  --primary-color2:#FDAD3E;
+  --primary-color3:#E9962E;
+  --darker-blue:#146C94;
+  --background-color: #F6F1F1;
+  --text-color: #292929;
+  --grad-color:#1f1f21;
+
+  --yellow-gradient:linear-gradient(164deg, rgba(255,181,71,1) 8%, rgba(253,173,62,1) 33%, rgba(255,142,0,1) 95%);
+  --yellow-conic-gradient:conic-gradient(from var(--gradient-angle) at 50% 50%, rgba(255, 204, 0, 1) 0%, rgba(253, 173, 62, 1) 22%, rgba(233, 150, 46, 1) 50%, rgba(246, 182, 19, 1) 74%, rgba(255, 204, 0, 1) 100%);
+  --black-gradient:linear-gradient(164deg, rgba(20,20,20,1) 2%, rgba(16,16,16,1) 10%, rgba(13,13,13,1) 40%,rgba(6,6,6,1) 60%, rgba(0,0,0,1) 74%);
+  --white-gradient:linear-gradient(#F6F1F1 90%, #000000 99%);
+}
+
+@font-face {
+  font-family: "Brawler";
+  src: url("./assets/fonts/Brawler-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Handshop";
+  src: url("./assets/fonts/HandShopTypography-C30.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Labora";
+  src: url("./assets/fonts/Labora-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oblong";
+  src: url("./assets/fonts/oblong.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Wosker";
+  src: url("./assets/fonts/Wosker.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Wondra";
+  src: url("./assets/fonts/Wondra.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Amithen";
+  src: url("./assets/fonts/Amithen.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bright";
+  src: url("./assets/fonts/Bright\ DEMO.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brother";
+  src: url("./assets/fonts/BROTHER-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bouquet";
+  src: url("./assets/fonts/Bouquet.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KindAvenue";
+  src: url("./assets/fonts/Kind-Avenue-Demo-BF656605ce56c32.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Maderon";
+  src: url("./assets/fonts/Maderon-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mayor";
+  src: url("./assets/fonts/Mayorpersonal.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pink";
+  src: url("./assets/fonts/PinkSunset-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Francy";
+  src: url("./assets/fonts/Francy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Valleny";
+  src: url("./assets/fonts/valleny.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Menda";
+  src: url("./assets/fonts/Menda\ Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Franie_bold";
+  src: url("./assets/fonts/Franie_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Franie_black";
+  src: url("./assets/fonts/Franie_Black.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }

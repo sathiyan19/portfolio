@@ -1,0 +1,40 @@
+.skills_sec{
+    padding-top: 100px;
+}
+.skills_holder{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.skills_scroller{
+    width: 80%;
+}
+
+.tab_view_scroller,.mob_view_scroller{
+    display: none;
+}
+
+@media(max-width:768px){
+    .lap_view_scroller,.mob_view_scroller{
+        display: none;
+    }
+    .tab_view_scroller{
+        display: block;
+    }
+    .skills_scroller{
+        width: 90%;
+    }
+}
+
+@media(max-width:600px){
+    .lap_view_scroller,.tab_view_scroller{
+        display: none;
+    }
+    .mob_view_scroller{
+        display: block;
+    }
+    .skills_scroller{
+        width: 95%;
+    }
+}

@@ -1,0 +1,127 @@
+.project_card_layout{
+    width: 300px;
+    position: relative;
+    aspect-ratio: calc(2.8/4);
+    /* height: 400px; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    /* background-color: var(--background-color); */
+    background-color: #1a1a1a;
+    
+    margin: 40px 20px;
+    box-shadow:
+  0px 0.5px 2.2px rgba(0, 0, 0, 0.02),
+  0px 1.1px 5.3px rgba(0, 0, 0, 0.028),
+  0px 2.1px 10px rgba(0, 0, 0, 0.035),
+  0px 3.8px 17.9px rgba(0, 0, 0, 0.042),
+  0px 7.1px 33.4px rgba(0, 0, 0, 0.05),
+  0px 17px 80px rgba(0, 0, 0, 0.07);
+}
+
+.project_card_layout:hover::after{
+    filter: blur(0.8rem);
+    transition: 400ms linear;
+}
+
+.project_card_layout::after,
+.project_card_layout::before{
+    content: "";
+    position: absolute;
+    inset: -0.05rem;
+    z-index: -1;
+    background: var(--yellow-conic-gradient);
+    border-radius: inherit;
+}
+
+/* .project_card_layout::after{
+    filter: blur(0.8rem);
+} */
+
+.project_card_img_holder{
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project_card_img{
+    width: 100%;
+}
+
+.project_card_details{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    height: 60%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project_card_tech_stack{
+    color: transparent;
+    background: var(--yellow-gradient);
+    -webkit-background-clip: text;
+    font-family: 'Francy';
+    letter-spacing: 1px;
+}
+
+.project_card_title{
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--background-color);
+    font-family:sans-serif;
+}
+
+.project_card_desc{
+    text-align: justify;
+    color: #999;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.project_card_foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project_card_duration{
+    display: flex;
+    color: #666666;
+    gap: 5px;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.project_card_dur_logo{
+    display: flex;
+    align-items: center;
+}
+
+.project_card_dur_logo>svg{
+    fill: #999;
+}
+@media(max-width:400px){
+    .project_card_title{
+        font-size: 22px;
+    }
+
+    .project_card_desc{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:350px){
+    .project_card_duration{
+        font-size: 14px;
+    }
+    .project_card_title{
+        font-size: 20px;
+    }
+
+    .project_card_desc{
+        font-size: 14px;
+    }
+}
