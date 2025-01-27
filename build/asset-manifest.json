@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.1f821b40.css",
-    "main.js": "/static/js/main.566d033b.js",
+    "main.css": "/static/css/main.c177bf2c.css",
+    "main.js": "/static/js/main.7c3cd673.js",
     "static/media/clg_web.png": "/static/media/clg_web.4e58ebd45c36c23e1310.png",
+    "static/media/eee_asso.png": "/static/media/eee_asso.a684e891452fa4387d06.png",
     "static/media/cogno.png": "/static/media/cogno.ec87baa49293cc248f2b.png",
     "static/media/mech'24.png": "/static/media/mech'24.05bcfc9efbced08aac65.png",
     "static/media/block_learn.png": "/static/media/block_learn.2db409dd715fb7aefdb8.png",
+    "static/media/cse_asso.png": "/static/media/cse_asso.656c07cb1970c6805e26.png",
     "static/media/exposys_app.png": "/static/media/exposys_app.7befcdb4c21f411d7f00.png",
     "static/media/Mayorpersonal.otf": "/static/media/Mayorpersonal.980d03f3824694dc047d.otf",
+    "static/media/Portfolio_pic.png": "/static/media/Portfolio_pic.022b4fdde4d77b2c42ac.png",
     "static/media/aj_travels.png": "/static/media/aj_travels.ccdade66cc39754967d6.png",
-    "static/media/Portfolio_pic.png": "/static/media/Portfolio_pic.ae560c03c164ac03f5b2.png",
     "static/media/mech_23.png": "/static/media/mech_23.27ccaa76b62ce7ac380e.png",
     "static/media/Amithen.ttf": "/static/media/Amithen.30234a045c19ca6529e4.ttf",
     "static/media/hero.jpg": "/static/media/hero.4d902c849636bd6d997c.jpg",
@@ -33,11 +35,11 @@
     "static/media/Bright DEMO.otf": "/static/media/Bright DEMO.21617e4c690addb9307e.otf",
     "static/media/Franie_Black.otf": "/static/media/Franie_Black.7b8db4c2b7b3cf3b7d5f.otf",
     "index.html": "/index.html",
-    "main.1f821b40.css.map": "/static/css/main.1f821b40.css.map",
-    "main.566d033b.js.map": "/static/js/main.566d033b.js.map"
+    "main.c177bf2c.css.map": "/static/css/main.c177bf2c.css.map",
+    "main.7c3cd673.js.map": "/static/js/main.7c3cd673.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f821b40.css",
-    "static/js/main.566d033b.js"
+    "static/css/main.c177bf2c.css",
+    "static/js/main.7c3cd673.js"
   ]
 }
